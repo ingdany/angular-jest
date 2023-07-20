@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AppComponent Should match with Snapshot 1`] = `
+<div
+  id="root3"
+>
+  <h1>
+    angular-jest
+  </h1>
+  <hr />
+  <router-outlet />
+  
+</div>
+`;
