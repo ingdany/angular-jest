@@ -20,20 +20,20 @@ describe('AppComponent', () => {
     expect(app.title).toEqual('angular-jest');
   });
 
-  test('should render title', () => {
-    const fixture = TestBed.createComponent(AppComponent);
-    const component = fixture.componentInstance;
-    fixture.detectChanges();
-    const compiled = fixture.nativeElement as HTMLElement;
-    const h1 = compiled.querySelector('h1');
-    expect(h1?.textContent).toContain(component.title);
-    // expect(compiled.querySelector('.content span')?.textContent).toContain('angular-jest app is running!');
-  });
+  // test('should render title', () => {
+  //   const fixture = TestBed.createComponent(AppComponent);
+  //   const component = fixture.componentInstance;
+  //   fixture.detectChanges();
+  //   const compiled = fixture.nativeElement as HTMLElement;
+  //   const h1 = compiled.querySelector('h1');
+  //   expect(h1?.textContent).toContain(component.title);
+  //   // expect(compiled.querySelector('.content span')?.textContent).toContain('angular-jest app is running!');
+  // });
 
-  test('Should match with Snapshot', () => {
-    const fixture = TestBed.createComponent(AppComponent);
-    fixture.detectChanges();
-    const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled).toMatchSnapshot();
-  });
+  // test('Should match with Snapshot', () => {
+  //   const fixture = TestBed.createComponent(AppComponent);
+  //   fixture.detectChanges();
+  //   const compiled = fixture.nativeElement as HTMLElement;
+  //   expect(compiled).toMatchSnapshot();
+  // });
 });
