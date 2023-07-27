@@ -43,3 +43,27 @@ Add import 'jest-preset-angular/setup-jest'
 ```
 
 ## Remove karma.conf.js and test.ts
+
+## Install Jest HTML Report
+`npm install jest-html-reporter --save-dev`
+
+Add to the `package.json` file
+
+```
+"reporters": [
+      "default",
+      ["./node_modules/jest-html-reporter", {
+        "pageTitle": "Test Report"
+      }]
+    ]
+```
+
+## How to install WKHTMLTOPDF
+```
+wget https://github.com/wkhtmltopdf/packaging/releases/download/0.12.6.1-2/wkhtmltox_0.12.6.1-2.jammy_amd64.deb
+sudo apt install -f ./wkhtmltox_0.12.6.1-2.jammy_amd64.deb
+```
+
+## Command to Convert from HTML to PDF using WKHTMLTOPDF
+
+`wkhtmltopdf test-report.html test-report.html`
