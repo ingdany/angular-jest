@@ -67,3 +67,19 @@ sudo apt install -f ./wkhtmltox_0.12.6.1-2.jammy_amd64.deb
 ## Command to Convert from HTML to PDF using WKHTMLTOPDF
 
 `wkhtmltopdf test-report.html test-report.html`
+
+## Generate XML to Export to Zephyr Squad
+
+```
+npm i -D jest-junit-reporter
+```
+
+Add the following line to `package.json`
+
+```
+{
+  "jest": {
+    "testResultsProcessor": "./node_modules/jest-junit-reporter"
+  }
+}
+```
